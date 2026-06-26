@@ -4,7 +4,10 @@ This project involves the development of a relational database designed to manag
 
 The proposed model is based on the 2015/2016 football season, which includes the European club competitions UEFA Champions League (UCL), UEFA Europa League (UEL), and the European Football Championship contested by the senior men's national teams of UEFA members (Euro 2016).
 
-🟥 *Note*: The domestic league of a country refers exclusively to the top national division. Additionally, the system is structured for senior men's professional football, serving as the primary focus for the model's competitive data. Therefore, youth competitions, women's football, and other age categories or competitive levels are not represented.
+---
+🟥 `Note`: The domestic league of a country refers exclusively to the top national division. Additionally, the system is structured for senior men's professional football, serving as the primary focus for the model's competitive data. Therefore, youth competitions, women's football, and other age categories or competitive levels are not represented.
+
+---
 
 ### 🥇 Key Features
 - **Comprehensive Data Modeling**: Tracks information for teams, players, coaches, sponsors, stadiums, and competition results.
@@ -15,6 +18,7 @@ The proposed model is based on the 2015/2016 football season, which includes the
 
 - **Performance Monitoring**: Includes functionalities to analyze team performance (ex: goal averages, match outcomes, player contributions) in domestic and international competitions.
 
+---
 
 ### 🥈 Constraints and Assumptions
 The model adheres to the following competitive and structural constraints:
@@ -48,6 +52,7 @@ To complement the structural design and relational logic described above, the fo
 
 - `trigger.sql`: This file contains a comprehensive suite of triggers dedicated to maintaining database integrity and auditing schema activity. It includes *row-level triggers* to synchronize goal counts in the MECI table and enforce stadium rules, *statement-level triggers* to regulate competition participation limits, and *DDL triggers* to log structural changes to the schema.
 
+---
 ### 🎖️ Project Structure
 The source code and design documentation are organized within the project root as follows:
 
