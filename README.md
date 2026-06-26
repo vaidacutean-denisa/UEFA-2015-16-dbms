@@ -1,4 +1,4 @@
-## UEFA Database Management System (2015/16 season)
+# UEFA Database Management System (2015/16 season)
 
 This project involves the development of a relational database designed to manage data concerning both domestic football leagues in UEFA member countries and international football tournaments regulated by the Union of European Football Associations (UEFA).
 
@@ -6,7 +6,7 @@ The proposed model is based on the 2015/2016 football season, which includes the
 
 The domestic league of a country refers exclusively to the top national division. Additionally, the system is structured for senior men's professional football, serving as the primary focus for the model's competitive data. Therefore, youth competitions, women's football, and other age categories or competitive levels are not represented.
 
-### Key Features
+## Key Features
 - **Comprehensive Data Modeling**: Tracks information for teams, players, coaches, sponsors, stadiums, and competition results.
 
 - **Relational Logic**: The model implements core relationships between entities, including team-stadium ownership, sponsorship contracts, and match participation.
@@ -16,7 +16,7 @@ The domestic league of a country refers exclusively to the top national division
 - **Performance Monitoring**: Includes functionalities to analyze team performance (ex: goal averages, match outcomes, player contributions) in domestic and international competitions.
 
 
-### Constraints and Assumptions
+## Constraints and Assumptions
 The model adheres to the following competitive and structural constraints:
 
 - **Club Affiliation**: Each club belongs to exactly one domestic championship.
@@ -48,7 +48,7 @@ To complement the structural design and relational logic described above, the fo
 
 - `trigger.sql`: This file contains a comprehensive suite of triggers dedicated to maintaining database integrity and auditing schema activity. It includes *row-level triggers* to synchronize goal counts in the MECI table and enforce stadium rules, *statement-level triggers* to regulate competition participation limits, and *DDL triggers* to log structural changes to the schema.
 
-### Project Structure
+## Project Structure
 The source code and design documentation are organized within the project root as follows:
 
 - `src/`: Contains the PL/SQL modules and database scripts:
